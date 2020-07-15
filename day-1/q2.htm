@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<title>question2</title>
+
+</head>
+
+<body>
+<h2> difference between var and const</h2><br>
+<h2>var:</h2><br>
+<h4>variables can be updated and re-declared within its scope; let variables can be updated but not re-declared </h4>
+<br>
+<h4>example</h4>is in console
+<script>
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+cars[0] = "Toyota";
+
+cars.push("Audi");
+console.log(cars);
+document.write(cars);
+</script>
+<h2>const:</h2>
+<br>
+<h4> const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope</h4>
+<h4>example</h4>
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+console.log(z);
+document.write(z);
+
+</script>
+
+
+</body>
+
+</html>
