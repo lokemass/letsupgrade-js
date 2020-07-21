@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+<title>Qyestion 1</title>
+
+</head>
+
+<body>
+<script>
+let arr = [];
+let val = prompt("enter the number");
+for(let i = 1; i<+val;i++){
+arr.push(i);
+}
+console.log(arr);
+let odd = arr.filter(eL=>eL%2!=0);
+console.log(odd);
+console.log("cubic");
+let oddcube = arr.filter(eL =>eL%2!=0).map(eL=>eL**2);
+console.log(oddcube);
+</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+<title>question 2</title>
+
+</head>
+
+<body>
+<script>
+const User={
+ name:'Vimal',
+ age:23,
+ email:'vimaltony@gmail.com',
+ login(){
+  console.log('Vimal has logged in');
+  },
+  logout(){
+  console.log('Vimal has logged out');
+  },
+  }
+  console.log(User.logout());
+  console.log(User.login());
+  class User1{
+  constructor (name,age,email){
+  this.name = name;
+  this.age= age;
+  this.email=email;
+  this.lucoins = 0;
+  }
+  login(){
+  console.log((this.name),"has logged in ");
+  }
+  logout(){
+  console.log((this.name),'has logged out ');
+  }
+  addcoins(){
+  this.lucoins++;
+  console.log((this.name),'has ',(this.lucoins),'coins');
+  }
+   rmcoins(){
+  this.lucoins--;
+  console.log((this.name),'has ',(this.lucoins),'coins');
+  }
+  
+  }
+  let user0 = new User1('ram',20,'ram@gmail.com')
+  let user01 = new User1('raj',21,'raj@gmail.com')
+  user0.login();
+  user01.login();
+  
+  user0.addcoins();
+   user0.addcoins();
+    user0.addcoins();
+    user0.rmcoins();
+    user0.logout();
+  
+   
+</script>
+
+</body>
+
+</html>
